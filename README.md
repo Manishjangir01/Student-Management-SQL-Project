@@ -1,35 +1,52 @@
-# Student-Management-SQL-Project
-SQL Data Analysis project on Student Management Database
 # Student Management SQL Project
 
-## 📌 Project Overview
-This project demonstrates SQL database creation, data insertion, and analysis
-using a Student Management System.
+A small MySQL project that creates a `Students` table, loads sample data and
+answers common analysis questions with SQL.
 
-## 🗂 Database Details
-- Database Name: StudentManagement
-- Table: Students
+## Database
 
-## 🛠 Technologies Used
-- MySQL
-- SQL Queries
+- Database: `StudentManagement`
+- Table: `Students`
 
-## 📊 Features & Queries
-- Display all student records
-- Calculate average scores
-- Identify top performer
-- Count students by grade
-- Gender-wise average marks
-- Filter students with high Math scores
-- Update student grade
+| Column         | Type        | Notes                       |
+|----------------|-------------|-----------------------------|
+| `StudentID`    | INT         | Primary key, auto increment |
+| `Name`         | VARCHAR(50) | Required                    |
+| `Gender`       | CHAR(1)     | `M` or `F`                  |
+| `Age`          | INT         | 5 to 25                     |
+| `Grade`        | VARCHAR(2)  | Class, e.g. `9`, `10`, `11` |
+| `MathScore`    | INT         | 0 to 100                    |
+| `ScienceScore` | INT         | 0 to 100                    |
+| `EnglishScore` | INT         | 0 to 100                    |
 
-## 📁 Project Files
-- student_management.sql → SQL queries & database structure
-- SQL_merged.pdf → Output report & results
+## Queries included
 
-## 🎯 Use Case
-Useful for:
-- SQL Practice
-- Internship Tasks
-- College Projects
-- Resume / LinkedIn Showcase
+1. Show all student records
+2. Average score in each subject
+3. Top performer (highest total score)
+4. Number of students per grade
+5. Gender-wise average scores
+6. Students with a Math score above 80
+7. Update a student's grade
+
+## How to run
+
+Requires MySQL 8.0.16 or newer (needed for `CHECK` constraints).
+
+```bash
+mysql -u <your-user> -p < student_management.sql
+```
+
+The script uses `DROP TABLE IF EXISTS`, so it can be run again at any time
+and always starts from the same sample data.
+
+## Files
+
+- `student_management.sql`: table structure, sample data and queries
+- `SQL_merged.pdf`: printed output report with results
+
+## Use cases
+
+- SQL practice
+- Internship and college tasks
+- Resume / LinkedIn showcase
