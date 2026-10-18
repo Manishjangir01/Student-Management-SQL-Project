@@ -50,3 +50,7 @@ and always starts from the same sample data.
 - SQL practice
 - Internship and college tasks
 - Resume / LinkedIn showcase
+
+## License
+
+MIT, see [LICENSE](LICENSE).
