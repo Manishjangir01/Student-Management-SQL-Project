@@ -1,5 +1,7 @@
 # Student Management SQL Project
 
+![Student Management SQL Project](docs/social-preview.png)
+
 A small MySQL project that creates a `Students` table, loads sample data and
 answers common analysis questions with SQL.
 
